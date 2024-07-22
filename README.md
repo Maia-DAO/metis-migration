@@ -1,66 +1,83 @@
-## Foundry
+# Token Balance Checker for Migration
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This repository contains scripts designed to check token balances for migration purposes. Tokens included are $MAIA, $HERMES and $starHERMES.
 
-Foundry consists of:
+## Getting Started
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+To get started with the repository, follow these steps:
 
-## Documentation
+0. Update MIGRATION_BLOCK in `getHolder.js` and package.json scripts
 
-https://book.getfoundry.sh/
+1. Install the necessary dependencies:
+   ```bash
+   forge install && yarn
+   ```
 
-## Usage
+## Steps to Check Token Balances for Migration
 
-### Build
+To simplify the process, we've added scripts to `package.json`. You can now run the following commands:
 
-```shell
-$ forge build
+### Step 0: Update MIGRATION_BLOCK in `getHolder.js` and package.json scripts!
+
+- Update MIGRATION_BLOCK in `getHolder.js` and package.json scripts!
+
+- If you think no pairs have changed you can run and skip all other steps:
+
+```bash
+  yarn run all
 ```
 
-### Test
+### Step 1: Run the FilterPairs Script
 
-```shell
-$ forge test
+```bash
+yarn run filter-pairs
 ```
 
-### Format
+### Step 1.1: Verify and Update Pairs List
 
-```shell
-$ forge fmt
+1.1. Check if the pairs list obtained from the `FilterPairs.s.sol` script is different from the lists in `getHolders.js`.
+
+1.1.1. If there are new pairs:
+
+- Add them their addresses to the appropriate index of the matching pools array.
+- Add them their creationBlocks to the appropriate index of the matching creationBlocks array
+
+### Step 2: Run the getHolders Script
+
+```bash
+yarn run get-holders
 ```
 
-### Gas Snapshots
+- Outputs to `holders_[TOKEN_ADDRESS].json`
 
-```shell
-$ forge snapshot
+### Step 3: Run the BalanceInsidePairs Script
+
+```bash
+yarn run balance-inside-pairs
 ```
 
-### Anvil
+- Outputs to `balances_[TOKEN_ADDRESS].json`
 
-```shell
-$ anvil
+### Step 4: Run the ExtractTotals Script
+
+```bash
+yarn run extract-totals
 ```
 
-### Deploy
+- Outputs to `totals.json`
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+## Repository Structure
 
-### Cast
+- **script/FilterPairs.s.sol**: Script to filter token pairs.
+- **scriptJs/getHolders.js**: Script to get token holders.
+- **script/BalanceInsidePairs.s.sol**: Script to check balances inside token pairs for each holder.
 
-```shell
-$ cast <subcommand>
-```
+## Contributing
 
-### Help
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## License
+
+This project is licensed under the MIT License.
+
+---
