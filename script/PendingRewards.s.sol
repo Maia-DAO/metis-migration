@@ -193,7 +193,15 @@ contract PendingRewards is Script {
                 string(abi.encodePacked("Gauge: ", vm.toString(gaugeAddresses[startGauge + i]), "\n"));
             for (uint256 j = 0; j < endAccount - startAccount; j++) {
                 uint256 index = i * (endAccount - startAccount) + j;
-                uint256 pendingReward = abi.decode(returnData[index], (uint256));
+                uint256 pendingReward;
+
+                // Ensure the return data is valid before decoding
+                if (returnData[index].length == 32) {
+                    pendingReward = abi.decode(returnData[index], (uint256));
+                } else {
+                    pendingReward = 0; // Default to 0 if the return data is unexpected
+                }
+
                 gaugeResult = string(
                     abi.encodePacked(
                         gaugeResult,
