@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-import "forge-std/console.sol";
 import "../src/Multicall.sol";
 import "forge-std/Script.sol";
 import {IERC20} from "forge-std/interfaces/IERC20.sol";
@@ -86,7 +85,7 @@ contract PendingRewards is Script {
     string inputFile = "./uniqueHolderAddresses.json";
     string outputFile = "./pending_rewards.json";
 
-    uint256 constant BATCH_SIZE = 250;
+    uint256 constant BATCH_SIZE = 100;
 
     function run() external {
         // Load JSON file and populate poolList arrays
@@ -126,9 +125,6 @@ contract PendingRewards is Script {
                 gaugeAddresses[i + j] = abi.decode(returnData[j], (address));
             }
         }
-
-        console.log("got gaugeAddresses");
-        console.log(gaugeAddresses.length);
 
         // Check pending rewards for each holder
         address tokenAddress = 0xb27BbeaACA2C00d6258C3118BAB6b5B6975161c8; // HERMES
@@ -197,39 +193,23 @@ contract PendingRewards is Script {
                 string(abi.encodePacked("Gauge: ", vm.toString(gaugeAddresses[startGauge + i]), "\n"));
             for (uint256 j = 0; j < endAccount - startAccount; j++) {
                 uint256 index = i * (endAccount - startAccount) + j;
-                uint256 pendingReward;
-
-                // Ensure the return data is valid before decoding
-                if (returnData[index].length == 32) {
-                    pendingReward = abi.decode(returnData[index], (uint256));
-                } else {
-                    pendingReward = 0; // Default to 0 if the return data is unexpected
-                }
-
-                if (pendingReward > 0) {
-                    // Only include non-zero rewards
-                    gaugeResult = string(
-                        abi.encodePacked(
-                            gaugeResult,
-                            "Account: ",
-                            vm.toString(accounts[startAccount + j]),
-                            ", Pending Reward: ",
-                            vm.toString(pendingReward),
-                            "\n"
-                        )
-                    );
-                    totalRewardForGauge += pendingReward;
-                }
-            }
-            if (totalRewardForGauge > 0) {
-                // Only include gauges with non-zero total rewards
+                uint256 pendingReward = abi.decode(returnData[index], (uint256));
                 gaugeResult = string(
-                    abi.encodePacked(gaugeResult, "Total Reward for Gauge: ", vm.toString(totalRewardForGauge), "\n\n")
+                    abi.encodePacked(
+                        gaugeResult,
+                        "Account: ",
+                        vm.toString(accounts[startAccount + j]),
+                        ", Pending Reward: ",
+                        vm.toString(pendingReward),
+                        "\n"
+                    )
                 );
-                finalResult = string(abi.encodePacked(finalResult, gaugeResult));
-                console.log("udpated finalResult");
-                
+                totalRewardForGauge += pendingReward;
             }
+            gaugeResult = string(
+                abi.encodePacked(gaugeResult, "Total Reward for Gauge: ", vm.toString(totalRewardForGauge), "\n\n")
+            );
+            finalResult = string(abi.encodePacked(finalResult, gaugeResult));
         }
         return finalResult;
     }
