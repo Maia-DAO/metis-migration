@@ -10,7 +10,8 @@
     "get-holders": "node scriptJs/getHolders.js && node scriptJs/consolidateHolders.js",
     "balance-inside-pairs": "forge script script/BalanceInsidePairs.s.sol --fork-url https://metis-pokt.nodies.app --fork-block-number 17706711",
     "extract-totals": "node scriptJs/extractTotals.js",
-    "get-rewards": "node scriptJs/getPendingRewards.js"
+    "get-rewards": "node scriptJs/getPendingRewards.js",
+    "staked-balance": "node scriptJs/getStakedBalance.js"
   },
   "dependencies": {
     "jsbi": "^4.3.0"
