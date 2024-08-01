@@ -7,12 +7,17 @@
   "scripts": {
     "all": "yarn run filter-pairs && yarn run get-holders && yarn run balance-inside-pairs && yarn run extract-totals",
     "filter-pairs": "forge script script/FilterPairs.s.sol --fork-url https://metis-pokt.nodies.app --fork-block-number 17706711",
-    "get-holders": "node scriptJs/getHolders.js",
+    "get-holders": "node scriptJs/getHolders.js && node scriptJs/consolidateHolders.js",
     "balance-inside-pairs": "forge script script/BalanceInsidePairs.s.sol --fork-url https://metis-pokt.nodies.app --fork-block-number 17706711",
-    "extract-totals": "node scriptJs/extractTotals.js"
+    "extract-totals": "node scriptJs/extractTotals.js",
+    "get-rewards": "node scriptJs/getPendingRewards.js"
   },
   "dependencies": {
-    "ethers": "^6.13.1",
     "jsbi": "^4.3.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.22.7"
   }
 }
