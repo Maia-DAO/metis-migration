@@ -6,8 +6,6 @@ This repository contains scripts designed to check token balances for migration 
 
 To get started with the repository, follow these steps:
 
-0. Update MIGRATION_BLOCK in `getHolder.js` and package.json scripts
-
 1. Install the necessary dependencies:
    ```bash
    forge install && yarn
@@ -21,7 +19,8 @@ To simplify the process, we've added scripts to `package.json`. You can now run 
 
 - Update MIGRATION_BLOCK in:
 
-  - `getHolder.js`
+  - `getPendingRewards.js` scripts
+  - `getStakedBalance.js` scripts
   - `package.json` scripts
   - `hardhat.conf` fork settings
 

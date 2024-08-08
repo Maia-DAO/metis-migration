@@ -1,5 +1,12 @@
-const { ethers } = require("hardhat");
+const { ethers } = require('ethers');
+
+// Setup ethers provider
+const provider = new ethers.providers.JsonRpcProvider('https://metis-mainnet.g.alchemy.com/v2/FWmhvca-2KGl6D1o9YcToyEeO8Lmshcy');
+
 const fs = require('fs');
+
+const MIGRATION_BLOCK = 18011710
+
 const JSBI = require('jsbi');
 
 const voterAddress = "0x879828da3a678D349A3C8d6B3D9C78e9Ee31137F";
@@ -1090,8 +1097,8 @@ async function main() {
         const accounts = JSON.parse(fs.readFileSync(inputFile, 'utf8'));
         const balances = JSON.parse(fs.readFileSync(balanceInputFile, 'utf8'));
 
-        const Voter = await ethers.getContractAt(VOTER_ABI, voterAddress);
-        const Multicall = await ethers.getContractAt(MULTICALL_ABI, multicallAddress);
+        const Voter = new ethers.Contract(voterAddress, VOTER_ABI, provider);
+        const Multicall = new ethers.Contract(multicallAddress, MULTICALL_ABI, provider);
 
         const poolAddresses = poolList[i]
         console.log("🚀 ~ main ~ poolAddresses:", poolAddresses)
@@ -1109,7 +1116,7 @@ async function batchMulticall(Multicall, calls) {
     for (let i = 0; i < calls.length; i += BATCH_SIZE) {
         console.log("🚀 ~ batchMulticall ~ calls:", i, i + BATCH_SIZE)
         const batchCalls = calls.slice(i, i + BATCH_SIZE);
-        const { returnData } = await Multicall.aggregate(batchCalls);
+        const { returnData } = await Multicall.aggregate(batchCalls, { blockTag: MIGRATION_BLOCK });
         console.log("🚀 ~ batchMulticall ~ returnData:", returnData)
         results = results.concat(returnData);
     }
@@ -1159,7 +1166,7 @@ function processAndFormatResults(gaugeAddresses, accounts, returnData, balanceCa
 
     let index = 0;
     for (const gaugeAddress of gaugeAddresses) {
-        let totalStakedForGauge = 0;
+        let totalStakedForGauge = JSBI.BigInt(0);
         const accountStakes = [];
 
         for (const account of accounts) {
@@ -1170,7 +1177,7 @@ function processAndFormatResults(gaugeAddresses, accounts, returnData, balanceCa
                     holderAddress: account,
                     stakedBalance
                 });
-                totalStakedForGauge += parseInt(stakedBalance);
+                JSBI.add(totalStakedForGauge, JSBI.BigInt(stakedBalance));
             }
             index++;
         }
@@ -1188,7 +1195,7 @@ function processAndFormatResults(gaugeAddresses, accounts, returnData, balanceCa
             const shares = accountStakes.map(stake => ({
                 holderAddress: stake.holderAddress,
                 stakedBalance: stake.stakedBalance,
-                shareOfTargetToken: JSBI.toNumber(JSBI.divide(
+                shareOfTargetToken: (JSBI.divide(
                     JSBI.multiply(JSBI.BigInt(stake.stakedBalance), JSBI.BigInt(poolBalance.holders.find((holder) => holder.holderAddress === gaugeAddress).tokenBalance)),
                     JSBI.BigInt(totalSupply)
                 )).toString()

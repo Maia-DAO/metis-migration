@@ -1,7 +1,7 @@
 const { ethers } = require('ethers');
 const fs = require('fs');
 
-const provider = new ethers.JsonRpcProvider('https://metis-pokt.nodies.app');
+const provider = new ethers.providers.JsonRpcProvider('https://metis-mainnet.g.alchemy.com/v2/FWmhvca-2KGl6D1o9YcToyEeO8Lmshcy');
 
 const PROTOCOL_AMOUNT = 3
 

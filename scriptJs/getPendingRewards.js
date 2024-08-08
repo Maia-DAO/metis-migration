@@ -1,5 +1,11 @@
-const { ethers } = require("hardhat");
+const { ethers } = require('ethers');
+
+// Setup ethers provider
+const provider = new ethers.providers.JsonRpcProvider('https://metis-mainnet.g.alchemy.com/v2/FWmhvca-2KGl6D1o9YcToyEeO8Lmshcy');
+
 const fs = require('fs');
+
+const MIGRATION_BLOCK = 18011710
 
 const hermes = "0xb27BbeaACA2C00d6258C3118BAB6b5B6975161c8"
 
@@ -173,8 +179,8 @@ async function main() {
 
         const accounts = JSON.parse(fs.readFileSync(inputFile, 'utf8'));
 
-        const Voter = await ethers.getContractAt(VOTER_ABI, voterAddress);
-        const Multicall = await ethers.getContractAt(MULTICALL_ABI, multicallAddress);
+        const Voter = new ethers.Contract(voterAddress, VOTER_ABI, provider);
+        const Multicall = new ethers.Contract(multicallAddress, MULTICALL_ABI, provider);
 
         const gaugeAddresses = await getGaugeAddresses(Voter, Multicall, i);
         console.log(`🚀 ~ main ~ gaugeAddresses for ${inputFile}:`, gaugeAddresses);
@@ -189,7 +195,7 @@ async function batchMulticall(Multicall, calls) {
     for (let i = 0; i < calls.length; i += BATCH_SIZE) {
         console.log("🚀 ~ batchMulticall ~ calls:", i, i + BATCH_SIZE)
         const batchCalls = calls.slice(i, i + BATCH_SIZE);
-        const { returnData } = await Multicall.aggregate(batchCalls);
+        const { returnData } = await Multicall.aggregate(batchCalls, { blockTag: MIGRATION_BLOCK });
         console.log("🚀 ~ batchMulticall ~ returnData:", returnData)
         results = results.concat(returnData);
     }
@@ -231,7 +237,7 @@ function processAndFormatResults(gaugeAddresses, accounts, returnData, outputFil
 
     let index = 0;
     for (const gaugeAddress of gaugeAddresses) {
-        let totalRewardForGauge = 0;
+        let totalRewardForGauge = JSBI.BigInt(0);
         const accountRewards = [];
 
         for (const account of accounts) {
@@ -242,7 +248,7 @@ function processAndFormatResults(gaugeAddresses, accounts, returnData, outputFil
                     account,
                     pendingReward
                 });
-                totalRewardForGauge += parseInt(pendingReward);
+                JSBI.add(totalRewardForGauge, JSBI.BigInt(pendingReward));
             }
             index++;
         }
