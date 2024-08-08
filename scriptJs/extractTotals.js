@@ -1,4 +1,5 @@
 const fs = require('fs');
+const JSBI = require('jsbi');
 
 // Define the target token addresses
 const targetTokens = [
@@ -40,10 +41,11 @@ const processFile = (filePath) => {
                         const tokenBalance = holder.tokenBalance;
 
                         if (!totalTokenBalances[targetToken][holderAddress]) {
-                            totalTokenBalances[targetToken][holderAddress] = 0;
+                            totalTokenBalances[targetToken][holderAddress] = JSBI.BigInt(0).toString();
                         }
+                        console.log("🚀 ~ fs.readFile ~ totalTokenBalances[targetToken][holderAddress]:", totalTokenBalances[targetToken][holderAddress], tokenBalance)
 
-                        totalTokenBalances[targetToken][holderAddress] += tokenBalance;
+                        totalTokenBalances[targetToken][holderAddress] = JSBI.add(JSBI.BigInt(totalTokenBalances[targetToken][holderAddress]), JSBI.BigInt(tokenBalance)).toString();
                     });
                 }
             });

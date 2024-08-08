@@ -43,8 +43,12 @@ const outputs = [
 const main = () => {
     const jsonObjects = readJsonFiles('./');
 
+    let allHolders = []
+
     for (let i = 0; i < 3; i++) {
         const uniqueHolderAddresses = consolidateHolderAddresses([jsonObjects[i]]);
+
+        allHolders[i] = jsonObjects[i]
 
         // Write unique holder addresses to a JSON file
         const outputFilePath = outputs[i];
@@ -53,6 +57,13 @@ const main = () => {
             console.log(`Unique holder addresses written to ${outputFilePath}`);
         }
     }
+
+    // Write unique holder addresses to a JSON file
+    const allHolderAddresses = allHolders.flat();
+    const uniqueHolderAddresses = consolidateHolderAddresses([allHolderAddresses]);
+    const outputFilePath = 'uniqueHolderAddresses.json';
+    fs.writeFileSync(outputFilePath, JSON.stringify(uniqueHolderAddresses, null, 2));
+    console.log(`All unique holder addresses written to uniqueHolderAddresses.json`);
 };
 
 main();
