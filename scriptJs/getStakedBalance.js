@@ -1186,6 +1186,7 @@ function processAndFormatResults(gaugeAddresses, accounts, returnData, balanceCa
         console.log("🚀 ~ processAndFormatResults ~ totalSupply:", totalSupply)
 
         console.log("🚀 ~ processAndFormatResults ~ balances:", balances)
+        // Get gauge related info by matching gauge address
         const poolBalance = balances.pools.find(balance =>
             balance.holders.find((holder) => holder.holderAddress === gaugeAddress)
         );
