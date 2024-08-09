@@ -1,76 +1,5 @@
 [
   {
-    "gauge": "0x2D678cd60B3dbE879d003Cb4f7aA039dc82Df9d0",
-    "stakes": [
-      {
-        "holderAddress": "0xa66cb18766461203b0912f65f7e9b97604bfa779",
-        "stakedBalance": "17900760723633639",
-        "shareOfTargetToken": "318546481623"
-      },
-      {
-        "holderAddress": "0x5471c381284c3d63cbed1b88ed3ff1bd1cfa1b4b",
-        "stakedBalance": "16281686043891478",
-        "shareOfTargetToken": "289734826595"
-      },
-      {
-        "holderAddress": "0xf7abacf24666ebe000bca3e28660e5b1c576ffca",
-        "stakedBalance": "3013507118642610",
-        "shareOfTargetToken": "53625770703"
-      },
-      {
-        "holderAddress": "0x5fb3a669d7125d3d9c0d598430122976c0292755",
-        "stakedBalance": "1953440206402280",
-        "shareOfTargetToken": "34761735236"
-      },
-      {
-        "holderAddress": "0xd07687ae97617f5d727ab0cdb70dde7343fe5399",
-        "stakedBalance": "439472931280772",
-        "shareOfTargetToken": "7820480827"
-      },
-      {
-        "holderAddress": "0x6fd2d80444a5d635140fc5722d2a47b51aa1d160",
-        "stakedBalance": "191747466988549",
-        "shareOfTargetToken": "3412172360"
-      },
-      {
-        "holderAddress": "0x446adef14fe52941b987f5467f43317228421f05",
-        "stakedBalance": "98903044028767",
-        "shareOfTargetToken": "1759993174"
-      },
-      {
-        "holderAddress": "0xe2da17b617c041fc448e9440c08ca7a136a7d02d",
-        "stakedBalance": "96307956907993",
-        "shareOfTargetToken": "1713813245"
-      },
-      {
-        "holderAddress": "0xb222b456ad71e15f3e25e534028223d8c34e1159",
-        "stakedBalance": "77157117564914",
-        "shareOfTargetToken": "1373021443"
-      },
-      {
-        "holderAddress": "0xa3a89931799ba449a7bd1658efd9c8662dd22bca",
-        "stakedBalance": "41537386021938",
-        "shareOfTargetToken": "739163456"
-      },
-      {
-        "holderAddress": "0x47663c9e96e2fefe04c20dd983550fa3c12ee100",
-        "stakedBalance": "6298576965549",
-        "shareOfTargetToken": "112084037"
-      },
-      {
-        "holderAddress": "0xb56ab9641ccc9be94959b7977f29caa74644fbd1",
-        "stakedBalance": "2944426820079",
-        "shareOfTargetToken": "52396477"
-      },
-      {
-        "holderAddress": "0x7a111c46e58436fe29253995ba96c45ebd873489",
-        "stakedBalance": "666779247000",
-        "shareOfTargetToken": "11865427"
-      }
-    ],
-    "totalStakedForGauge": "40104429778395570"
-  },
-  {
     "gauge": "0x975706b498E43E3c8c5775B3C881566db8a78c67",
     "stakes": [
       {
@@ -284,278 +213,7 @@
         "shareOfTargetToken": "0"
       }
     ],
-    "totalStakedForGauge": "9947887172184344"
-  },
-  {
-    "gauge": "0x73c1aB2D75a36f2157F4345c0fFa6F79f050A6B1",
-    "stakes": [
-      {
-        "holderAddress": "0x43ef77ae47f79af5f0c3674ee28ca0fef692a012",
-        "stakedBalance": "635200764510",
-        "shareOfTargetToken": "673716402116"
-      },
-      {
-        "holderAddress": "0x6fd2d80444a5d635140fc5722d2a47b51aa1d160",
-        "stakedBalance": "540218157979",
-        "shareOfTargetToken": "572974489463"
-      },
-      {
-        "holderAddress": "0xe2aa2846481baa23e4030099233b4041c8d1a0e4",
-        "stakedBalance": "320066854361",
-        "shareOfTargetToken": "339474228629"
-      },
-      {
-        "holderAddress": "0xd8baef0453632ed287aad07aa11965e8dd96d782",
-        "stakedBalance": "307979164251",
-        "shareOfTargetToken": "326653596876"
-      },
-      {
-        "holderAddress": "0x080abbf5754d8cf502a179085c647966fe25ced8",
-        "stakedBalance": "248015046917",
-        "shareOfTargetToken": "263053532702"
-      },
-      {
-        "holderAddress": "0xc9eebecb1d0aff4fb2b9978516e075a33639892c",
-        "stakedBalance": "246853966434",
-        "shareOfTargetToken": "261822049667"
-      },
-      {
-        "holderAddress": "0x971ea71d5a18d6c18c9ec51d31100bc6f0c43eb2",
-        "stakedBalance": "200128088753",
-        "shareOfTargetToken": "212262930793"
-      },
-      {
-        "holderAddress": "0x9b3780d3e439650a16c78cba5f9b82b483eeaa81",
-        "stakedBalance": "166301109240",
-        "shareOfTargetToken": "176384839636"
-      },
-      {
-        "holderAddress": "0x9a0b09da43fe2f4a5321e3dffc62d8eefc724620",
-        "stakedBalance": "157343293606",
-        "shareOfTargetToken": "166883863477"
-      },
-      {
-        "holderAddress": "0xf7abacf24666ebe000bca3e28660e5b1c576ffca",
-        "stakedBalance": "152161836732",
-        "shareOfTargetToken": "161388227014"
-      },
-      {
-        "holderAddress": "0xff93a6ecd7073a42f2de288f374d39e1a9088cc1",
-        "stakedBalance": "149063406021",
-        "shareOfTargetToken": "158101921790"
-      },
-      {
-        "holderAddress": "0x87fc1313880d579039ac48db8b25428ed5f33c4a",
-        "stakedBalance": "124408081013",
-        "shareOfTargetToken": "131951611863"
-      },
-      {
-        "holderAddress": "0x1f549f06a9f16b599cb5b42baaf4d34a8c9dfc53",
-        "stakedBalance": "123792132099",
-        "shareOfTargetToken": "131298314655"
-      },
-      {
-        "holderAddress": "0x6863e1091e73de0cd4546ef0d12183133cd252bd",
-        "stakedBalance": "118968545508",
-        "shareOfTargetToken": "126182248074"
-      },
-      {
-        "holderAddress": "0x749d2c4fdfa0b60595dbacd52e9092b30e9eaa32",
-        "stakedBalance": "70237474966",
-        "shareOfTargetToken": "74496350715"
-      },
-      {
-        "holderAddress": "0xc933333d76261b55065feed8715b5c75e2167af6",
-        "stakedBalance": "62123653143",
-        "shareOfTargetToken": "65890544250"
-      },
-      {
-        "holderAddress": "0x51c29c37ff4bb2cb3541b0758eac48382071b506",
-        "stakedBalance": "60817411159",
-        "shareOfTargetToken": "64505097791"
-      },
-      {
-        "holderAddress": "0x1786598162426e10abc384e0ba90a830e3b7742d",
-        "stakedBalance": "59237762229",
-        "shareOfTargetToken": "62829666253"
-      },
-      {
-        "holderAddress": "0xd543792aec7f9f1007447aeb707404c72e75540f",
-        "stakedBalance": "50043418173",
-        "shareOfTargetToken": "53077819682"
-      },
-      {
-        "holderAddress": "0x3e38ef489af0e780fb1a18db36b47efcb6a859b5",
-        "stakedBalance": "46380169475",
-        "shareOfTargetToken": "49192448520"
-      },
-      {
-        "holderAddress": "0x32ba581d74fad48b11782380a21e70208f817c06",
-        "stakedBalance": "28762627058",
-        "shareOfTargetToken": "30506659783"
-      },
-      {
-        "holderAddress": "0x7e9d92593e20e5e37e095d62c675bfa9d5af604e",
-        "stakedBalance": "24431829776",
-        "shareOfTargetToken": "25913262976"
-      },
-      {
-        "holderAddress": "0x904dbc5fdf2676f657c24903f307b276c992a404",
-        "stakedBalance": "23889161291",
-        "shareOfTargetToken": "25337689583"
-      },
-      {
-        "holderAddress": "0xd141d52337b805243a1cabcfa5fd9fdcf824c97e",
-        "stakedBalance": "23298750507",
-        "shareOfTargetToken": "24711479019"
-      },
-      {
-        "holderAddress": "0xb05cf01231cf2ff99499682e64d3780d57c80fdd",
-        "stakedBalance": "19166225534",
-        "shareOfTargetToken": "20328376838"
-      },
-      {
-        "holderAddress": "0x733ab147ef8f4efea84ced248f1afe74fbe21582",
-        "stakedBalance": "17443403883",
-        "shareOfTargetToken": "18501091247"
-      },
-      {
-        "holderAddress": "0xff807487542b792b1af9c7ed8369130832a5570b",
-        "stakedBalance": "14634312734",
-        "shareOfTargetToken": "15521669798"
-      },
-      {
-        "holderAddress": "0x39ea1a9f8caa308ebb3f9da4829f1fff7b74b72c",
-        "stakedBalance": "14587159552",
-        "shareOfTargetToken": "15471657465"
-      },
-      {
-        "holderAddress": "0x2c082ee13fb1683a456413894f1af5c1c4175a10",
-        "stakedBalance": "13181669238",
-        "shareOfTargetToken": "13980944717"
-      },
-      {
-        "holderAddress": "0x7e3657dc92364d46a6ce139870a2474bea18626e",
-        "stakedBalance": "13019389795",
-        "shareOfTargetToken": "13808825399"
-      },
-      {
-        "holderAddress": "0xe2da17b617c041fc448e9440c08ca7a136a7d02d",
-        "stakedBalance": "11780782198",
-        "shareOfTargetToken": "12495114363"
-      },
-      {
-        "holderAddress": "0x9dd4c7936a29e1b68bcdcdc3d5b71da5e729e71d",
-        "stakedBalance": "11489042164",
-        "shareOfTargetToken": "12185684563"
-      },
-      {
-        "holderAddress": "0x7e98b9982daf61a0260a1de9e5a27c26d599bd51",
-        "stakedBalance": "10721346580",
-        "shareOfTargetToken": "11371439468"
-      },
-      {
-        "holderAddress": "0x60a2c9a2d73ecafc07af7f234742f1fc1d1758c6",
-        "stakedBalance": "9986085329",
-        "shareOfTargetToken": "10591595374"
-      },
-      {
-        "holderAddress": "0xca44271a10a1b24bda177800beccbe9a1bc2165e",
-        "stakedBalance": "8188420487",
-        "shareOfTargetToken": "8684928447"
-      },
-      {
-        "holderAddress": "0xcb6586874cc04b01cc4fdb777de502cea7b3d6c1",
-        "stakedBalance": "8141689947",
-        "shareOfTargetToken": "8635364383"
-      },
-      {
-        "holderAddress": "0xa860180e099eeece0a1cffd01fc27948add5d655",
-        "stakedBalance": "6952798093",
-        "shareOfTargetToken": "7374383624"
-      },
-      {
-        "holderAddress": "0x8819fe134868c5ea58e256793f2126571d7248b0",
-        "stakedBalance": "5897039889",
-        "shareOfTargetToken": "6254609123"
-      },
-      {
-        "holderAddress": "0xbec057d76d197ee79d1c63ab42c29f9419499aa9",
-        "stakedBalance": "5307894466",
-        "shareOfTargetToken": "5629740646"
-      },
-      {
-        "holderAddress": "0xdbe609abfd89a224ab270fba62b9f9341032974a",
-        "stakedBalance": "4898445808",
-        "shareOfTargetToken": "5195464914"
-      },
-      {
-        "holderAddress": "0x2d6ab3ded8a86bbe1d3d8a497cdeef6296869339",
-        "stakedBalance": "4593886408",
-        "shareOfTargetToken": "4872438440"
-      },
-      {
-        "holderAddress": "0x0848ddfc52b09c38e62250c72c459113a36aa0cd",
-        "stakedBalance": "3727814846",
-        "shareOfTargetToken": "3953852303"
-      },
-      {
-        "holderAddress": "0xaf798d139045d88c5584027bd3c24a7efa3d51a8",
-        "stakedBalance": "3660458000",
-        "shareOfTargetToken": "3882411249"
-      },
-      {
-        "holderAddress": "0xb162a8693375acafb011de6123a7d7425101e20d",
-        "stakedBalance": "2985834560",
-        "shareOfTargetToken": "3166881763"
-      },
-      {
-        "holderAddress": "0x4ce2f261be9990f2d5e05eae7e96c37796588520",
-        "stakedBalance": "2368550118",
-        "shareOfTargetToken": "2512168046"
-      },
-      {
-        "holderAddress": "0xfdd3eea1e2b41654e143d4b4f5390363eb055456",
-        "stakedBalance": "2015885063",
-        "shareOfTargetToken": "2138119013"
-      },
-      {
-        "holderAddress": "0xfee114bdff91770d637c9d4de82bf7cc5a2c16e2",
-        "stakedBalance": "1170585983",
-        "shareOfTargetToken": "1241564904"
-      },
-      {
-        "holderAddress": "0x9c9a0a21d13a50b28188f8831125c0716386f227",
-        "stakedBalance": "1103269377",
-        "shareOfTargetToken": "1170166531"
-      },
-      {
-        "holderAddress": "0xf00a8009431471a1dbd6d831de5ce9607845e63e",
-        "stakedBalance": "1047898238",
-        "shareOfTargetToken": "1111437942"
-      },
-      {
-        "holderAddress": "0xb9d24761ebb3e3a88b8cf20e77f56ccf026a2044",
-        "stakedBalance": "974078864",
-        "shareOfTargetToken": "1033142502"
-      },
-      {
-        "holderAddress": "0x4bbe0fd0bdec55e074c5e6ea9f4f627aff31e93a",
-        "stakedBalance": "940754459",
-        "shareOfTargetToken": "997797459"
-      },
-      {
-        "holderAddress": "0x3e763998e3c70b15347d68dc93a9ca021385675d",
-        "stakedBalance": "539057761",
-        "shareOfTargetToken": "571743731"
-      },
-      {
-        "holderAddress": "0x5bee7318987541b7e4236e215509edbf21859fc0",
-        "stakedBalance": "6421000",
-        "shareOfTargetToken": "6810339"
-      }
-    ],
-    "totalStakedForGauge": "4140252905575"
+    "totalStakedForGauge": "0"
   },
   {
     "gauge": "0x528c90238C612d3d827F7C866b5708C3B0d315e6",
@@ -1221,7 +879,89 @@
         "shareOfTargetToken": "1274"
       }
     ],
-    "totalStakedForGauge": "2250534061057"
+    "totalStakedForGauge": "0"
+  },
+  {
+    "gauge": "0x2D678cd60B3dbE879d003Cb4f7aA039dc82Df9d0",
+    "stakes": [
+      {
+        "holderAddress": "0xa66cb18766461203b0912f65f7e9b97604bfa779",
+        "stakedBalance": "17900760723633639",
+        "shareOfTargetToken": "318546481623"
+      },
+      {
+        "holderAddress": "0x5471c381284c3d63cbed1b88ed3ff1bd1cfa1b4b",
+        "stakedBalance": "16281686043891478",
+        "shareOfTargetToken": "289734826595"
+      },
+      {
+        "holderAddress": "0xf7abacf24666ebe000bca3e28660e5b1c576ffca",
+        "stakedBalance": "3013507118642610",
+        "shareOfTargetToken": "53625770703"
+      },
+      {
+        "holderAddress": "0x5fb3a669d7125d3d9c0d598430122976c0292755",
+        "stakedBalance": "1953440206402280",
+        "shareOfTargetToken": "34761735236"
+      },
+      {
+        "holderAddress": "0xd07687ae97617f5d727ab0cdb70dde7343fe5399",
+        "stakedBalance": "439472931280772",
+        "shareOfTargetToken": "7820480827"
+      },
+      {
+        "holderAddress": "0x6fd2d80444a5d635140fc5722d2a47b51aa1d160",
+        "stakedBalance": "191747466988549",
+        "shareOfTargetToken": "3412172360"
+      },
+      {
+        "holderAddress": "0x446adef14fe52941b987f5467f43317228421f05",
+        "stakedBalance": "98903044028767",
+        "shareOfTargetToken": "1759993174"
+      },
+      {
+        "holderAddress": "0xe2da17b617c041fc448e9440c08ca7a136a7d02d",
+        "stakedBalance": "96307956907993",
+        "shareOfTargetToken": "1713813245"
+      },
+      {
+        "holderAddress": "0xb222b456ad71e15f3e25e534028223d8c34e1159",
+        "stakedBalance": "77157117564914",
+        "shareOfTargetToken": "1373021443"
+      },
+      {
+        "holderAddress": "0xa3a89931799ba449a7bd1658efd9c8662dd22bca",
+        "stakedBalance": "41537386021938",
+        "shareOfTargetToken": "739163456"
+      },
+      {
+        "holderAddress": "0x47663c9e96e2fefe04c20dd983550fa3c12ee100",
+        "stakedBalance": "6298576965549",
+        "shareOfTargetToken": "112084037"
+      },
+      {
+        "holderAddress": "0xb56ab9641ccc9be94959b7977f29caa74644fbd1",
+        "stakedBalance": "2944426820079",
+        "shareOfTargetToken": "52396477"
+      },
+      {
+        "holderAddress": "0x7a111c46e58436fe29253995ba96c45ebd873489",
+        "stakedBalance": "666779247000",
+        "shareOfTargetToken": "11865427"
+      }
+    ],
+    "totalStakedForGauge": "0"
+  },
+  {
+    "gauge": "0x1CeA9813b81959e5eC02231845ff2CEdBedF6430",
+    "stakes": [
+      {
+        "holderAddress": "0x790a5dee06105f5c410b85177173811102c101f8",
+        "stakedBalance": "1000",
+        "shareOfTargetToken": "1"
+      }
+    ],
+    "totalStakedForGauge": "0"
   },
   {
     "gauge": "0xdEE1ffEBE5a515e5369C3938F387553EeE98Bd54",
@@ -1237,17 +977,277 @@
         "shareOfTargetToken": "725"
       }
     ],
-    "totalStakedForGauge": "1940000727"
+    "totalStakedForGauge": "0"
   },
   {
-    "gauge": "0x1CeA9813b81959e5eC02231845ff2CEdBedF6430",
+    "gauge": "0x73c1aB2D75a36f2157F4345c0fFa6F79f050A6B1",
     "stakes": [
       {
-        "holderAddress": "0x790a5dee06105f5c410b85177173811102c101f8",
-        "stakedBalance": "1000",
-        "shareOfTargetToken": "1"
+        "holderAddress": "0x43ef77ae47f79af5f0c3674ee28ca0fef692a012",
+        "stakedBalance": "635200764510",
+        "shareOfTargetToken": "673716402116"
+      },
+      {
+        "holderAddress": "0x6fd2d80444a5d635140fc5722d2a47b51aa1d160",
+        "stakedBalance": "540218157979",
+        "shareOfTargetToken": "572974489463"
+      },
+      {
+        "holderAddress": "0xe2aa2846481baa23e4030099233b4041c8d1a0e4",
+        "stakedBalance": "320066854361",
+        "shareOfTargetToken": "339474228629"
+      },
+      {
+        "holderAddress": "0xd8baef0453632ed287aad07aa11965e8dd96d782",
+        "stakedBalance": "307979164251",
+        "shareOfTargetToken": "326653596876"
+      },
+      {
+        "holderAddress": "0x080abbf5754d8cf502a179085c647966fe25ced8",
+        "stakedBalance": "248015046917",
+        "shareOfTargetToken": "263053532702"
+      },
+      {
+        "holderAddress": "0xc9eebecb1d0aff4fb2b9978516e075a33639892c",
+        "stakedBalance": "246853966434",
+        "shareOfTargetToken": "261822049667"
+      },
+      {
+        "holderAddress": "0x971ea71d5a18d6c18c9ec51d31100bc6f0c43eb2",
+        "stakedBalance": "200128088753",
+        "shareOfTargetToken": "212262930793"
+      },
+      {
+        "holderAddress": "0x9b3780d3e439650a16c78cba5f9b82b483eeaa81",
+        "stakedBalance": "166301109240",
+        "shareOfTargetToken": "176384839636"
+      },
+      {
+        "holderAddress": "0x9a0b09da43fe2f4a5321e3dffc62d8eefc724620",
+        "stakedBalance": "157343293606",
+        "shareOfTargetToken": "166883863477"
+      },
+      {
+        "holderAddress": "0xf7abacf24666ebe000bca3e28660e5b1c576ffca",
+        "stakedBalance": "152161836732",
+        "shareOfTargetToken": "161388227014"
+      },
+      {
+        "holderAddress": "0xff93a6ecd7073a42f2de288f374d39e1a9088cc1",
+        "stakedBalance": "149063406021",
+        "shareOfTargetToken": "158101921790"
+      },
+      {
+        "holderAddress": "0x87fc1313880d579039ac48db8b25428ed5f33c4a",
+        "stakedBalance": "124408081013",
+        "shareOfTargetToken": "131951611863"
+      },
+      {
+        "holderAddress": "0x1f549f06a9f16b599cb5b42baaf4d34a8c9dfc53",
+        "stakedBalance": "123792132099",
+        "shareOfTargetToken": "131298314655"
+      },
+      {
+        "holderAddress": "0x6863e1091e73de0cd4546ef0d12183133cd252bd",
+        "stakedBalance": "118968545508",
+        "shareOfTargetToken": "126182248074"
+      },
+      {
+        "holderAddress": "0x749d2c4fdfa0b60595dbacd52e9092b30e9eaa32",
+        "stakedBalance": "70237474966",
+        "shareOfTargetToken": "74496350715"
+      },
+      {
+        "holderAddress": "0xc933333d76261b55065feed8715b5c75e2167af6",
+        "stakedBalance": "62123653143",
+        "shareOfTargetToken": "65890544250"
+      },
+      {
+        "holderAddress": "0x51c29c37ff4bb2cb3541b0758eac48382071b506",
+        "stakedBalance": "60817411159",
+        "shareOfTargetToken": "64505097791"
+      },
+      {
+        "holderAddress": "0x1786598162426e10abc384e0ba90a830e3b7742d",
+        "stakedBalance": "59237762229",
+        "shareOfTargetToken": "62829666253"
+      },
+      {
+        "holderAddress": "0xd543792aec7f9f1007447aeb707404c72e75540f",
+        "stakedBalance": "50043418173",
+        "shareOfTargetToken": "53077819682"
+      },
+      {
+        "holderAddress": "0x3e38ef489af0e780fb1a18db36b47efcb6a859b5",
+        "stakedBalance": "46380169475",
+        "shareOfTargetToken": "49192448520"
+      },
+      {
+        "holderAddress": "0x32ba581d74fad48b11782380a21e70208f817c06",
+        "stakedBalance": "28762627058",
+        "shareOfTargetToken": "30506659783"
+      },
+      {
+        "holderAddress": "0x7e9d92593e20e5e37e095d62c675bfa9d5af604e",
+        "stakedBalance": "24431829776",
+        "shareOfTargetToken": "25913262976"
+      },
+      {
+        "holderAddress": "0x904dbc5fdf2676f657c24903f307b276c992a404",
+        "stakedBalance": "23889161291",
+        "shareOfTargetToken": "25337689583"
+      },
+      {
+        "holderAddress": "0xd141d52337b805243a1cabcfa5fd9fdcf824c97e",
+        "stakedBalance": "23298750507",
+        "shareOfTargetToken": "24711479019"
+      },
+      {
+        "holderAddress": "0xb05cf01231cf2ff99499682e64d3780d57c80fdd",
+        "stakedBalance": "19166225534",
+        "shareOfTargetToken": "20328376838"
+      },
+      {
+        "holderAddress": "0x733ab147ef8f4efea84ced248f1afe74fbe21582",
+        "stakedBalance": "17443403883",
+        "shareOfTargetToken": "18501091247"
+      },
+      {
+        "holderAddress": "0xff807487542b792b1af9c7ed8369130832a5570b",
+        "stakedBalance": "14634312734",
+        "shareOfTargetToken": "15521669798"
+      },
+      {
+        "holderAddress": "0x39ea1a9f8caa308ebb3f9da4829f1fff7b74b72c",
+        "stakedBalance": "14587159552",
+        "shareOfTargetToken": "15471657465"
+      },
+      {
+        "holderAddress": "0x2c082ee13fb1683a456413894f1af5c1c4175a10",
+        "stakedBalance": "13181669238",
+        "shareOfTargetToken": "13980944717"
+      },
+      {
+        "holderAddress": "0x7e3657dc92364d46a6ce139870a2474bea18626e",
+        "stakedBalance": "13019389795",
+        "shareOfTargetToken": "13808825399"
+      },
+      {
+        "holderAddress": "0xe2da17b617c041fc448e9440c08ca7a136a7d02d",
+        "stakedBalance": "11780782198",
+        "shareOfTargetToken": "12495114363"
+      },
+      {
+        "holderAddress": "0x9dd4c7936a29e1b68bcdcdc3d5b71da5e729e71d",
+        "stakedBalance": "11489042164",
+        "shareOfTargetToken": "12185684563"
+      },
+      {
+        "holderAddress": "0x7e98b9982daf61a0260a1de9e5a27c26d599bd51",
+        "stakedBalance": "10721346580",
+        "shareOfTargetToken": "11371439468"
+      },
+      {
+        "holderAddress": "0x60a2c9a2d73ecafc07af7f234742f1fc1d1758c6",
+        "stakedBalance": "9986085329",
+        "shareOfTargetToken": "10591595374"
+      },
+      {
+        "holderAddress": "0xca44271a10a1b24bda177800beccbe9a1bc2165e",
+        "stakedBalance": "8188420487",
+        "shareOfTargetToken": "8684928447"
+      },
+      {
+        "holderAddress": "0xcb6586874cc04b01cc4fdb777de502cea7b3d6c1",
+        "stakedBalance": "8141689947",
+        "shareOfTargetToken": "8635364383"
+      },
+      {
+        "holderAddress": "0xa860180e099eeece0a1cffd01fc27948add5d655",
+        "stakedBalance": "6952798093",
+        "shareOfTargetToken": "7374383624"
+      },
+      {
+        "holderAddress": "0x8819fe134868c5ea58e256793f2126571d7248b0",
+        "stakedBalance": "5897039889",
+        "shareOfTargetToken": "6254609123"
+      },
+      {
+        "holderAddress": "0xbec057d76d197ee79d1c63ab42c29f9419499aa9",
+        "stakedBalance": "5307894466",
+        "shareOfTargetToken": "5629740646"
+      },
+      {
+        "holderAddress": "0xdbe609abfd89a224ab270fba62b9f9341032974a",
+        "stakedBalance": "4898445808",
+        "shareOfTargetToken": "5195464914"
+      },
+      {
+        "holderAddress": "0x2d6ab3ded8a86bbe1d3d8a497cdeef6296869339",
+        "stakedBalance": "4593886408",
+        "shareOfTargetToken": "4872438440"
+      },
+      {
+        "holderAddress": "0x0848ddfc52b09c38e62250c72c459113a36aa0cd",
+        "stakedBalance": "3727814846",
+        "shareOfTargetToken": "3953852303"
+      },
+      {
+        "holderAddress": "0xaf798d139045d88c5584027bd3c24a7efa3d51a8",
+        "stakedBalance": "3660458000",
+        "shareOfTargetToken": "3882411249"
+      },
+      {
+        "holderAddress": "0xb162a8693375acafb011de6123a7d7425101e20d",
+        "stakedBalance": "2985834560",
+        "shareOfTargetToken": "3166881763"
+      },
+      {
+        "holderAddress": "0x4ce2f261be9990f2d5e05eae7e96c37796588520",
+        "stakedBalance": "2368550118",
+        "shareOfTargetToken": "2512168046"
+      },
+      {
+        "holderAddress": "0xfdd3eea1e2b41654e143d4b4f5390363eb055456",
+        "stakedBalance": "2015885063",
+        "shareOfTargetToken": "2138119013"
+      },
+      {
+        "holderAddress": "0xfee114bdff91770d637c9d4de82bf7cc5a2c16e2",
+        "stakedBalance": "1170585983",
+        "shareOfTargetToken": "1241564904"
+      },
+      {
+        "holderAddress": "0x9c9a0a21d13a50b28188f8831125c0716386f227",
+        "stakedBalance": "1103269377",
+        "shareOfTargetToken": "1170166531"
+      },
+      {
+        "holderAddress": "0xf00a8009431471a1dbd6d831de5ce9607845e63e",
+        "stakedBalance": "1047898238",
+        "shareOfTargetToken": "1111437942"
+      },
+      {
+        "holderAddress": "0xb9d24761ebb3e3a88b8cf20e77f56ccf026a2044",
+        "stakedBalance": "974078864",
+        "shareOfTargetToken": "1033142502"
+      },
+      {
+        "holderAddress": "0x4bbe0fd0bdec55e074c5e6ea9f4f627aff31e93a",
+        "stakedBalance": "940754459",
+        "shareOfTargetToken": "997797459"
+      },
+      {
+        "holderAddress": "0x3e763998e3c70b15347d68dc93a9ca021385675d",
+        "stakedBalance": "539057761",
+        "shareOfTargetToken": "571743731"
+      },
+      {
+        "holderAddress": "0x5bee7318987541b7e4236e215509edbf21859fc0",
+        "stakedBalance": "6421000",
+        "shareOfTargetToken": "6810339"
       }
     ],
-    "totalStakedForGauge": "1000"
+    "totalStakedForGauge": "0"
   }
 ]

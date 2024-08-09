@@ -1177,7 +1177,7 @@ function processAndFormatResults(gaugeAddresses, accounts, returnData, balanceCa
                     holderAddress: account,
                     stakedBalance
                 });
-                JSBI.add(totalStakedForGauge, JSBI.BigInt(stakedBalance));
+                JSBI.add(JSBI.BigInt(totalStakedForGauge), JSBI.BigInt(stakedBalance)).toString();
             }
             index++;
         }
