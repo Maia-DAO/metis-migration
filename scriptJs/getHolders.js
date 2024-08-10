@@ -147,8 +147,8 @@ async function getHolders(poolContract, fromBlock, toBlock) {
 
     const uniqueAddresses = new Set();
     for (const log of logs) {
-        const from = '0x' + log.topics[1].slice(26);
-        const to = '0x' + log.topics[2].slice(26);
+        const from = ethers.utils.getAddress('0x' + log.topics[1].slice(26));
+        const to = ethers.utils.getAddress('0x' + log.topics[2].slice(26));
         if (!ADDRESSES_TO_IGNORE.includes(from)) uniqueAddresses.add(from);
         if (!ADDRESSES_TO_IGNORE.includes(to)) uniqueAddresses.add(to);
     }

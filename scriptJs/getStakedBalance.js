@@ -1092,7 +1092,7 @@ async function main() {
         const inputFile = inputFiles[i];
         const balanceInputFile = balanceInputFiles[i];
         const outputFile = outputFiles[i].toString();
-        console.log("🚀 ~ main ~ outputFile:", outputFile)
+        console.log("🚀 ~ main ~ outputFile:", inputFile, balanceInputFile, outputFile)
 
         const accounts = JSON.parse(fs.readFileSync(inputFile, 'utf8'));
         const balances = JSON.parse(fs.readFileSync(balanceInputFile, 'utf8'));
