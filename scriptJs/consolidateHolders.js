@@ -1,12 +1,15 @@
 const fs = require('fs');
 const path = require('path');
 
+const inputs = [
+    'holders_0x72c232D56542Ba082592DEE7C77b1C6CFA758BCD.json',
+    'holders_0xb27BbeaACA2C00d6258C3118BAB6b5B6975161c8.json',
+    'holders_0xaFF73f55968Ab4b276a26E574c96e09A615b13d6.json',
+]
+
 // Function to read JSON files from a directory
 const readJsonFiles = (directoryPath) => {
-    // there are three files here
-    const files = fs.readdirSync(directoryPath);
-    const jsonFiles = files.filter(file => /^holders.*\.json$/.test(file));
-    return jsonFiles.map(file => {
+    return inputs.map(file => {
         const data = fs.readFileSync(path.join(directoryPath, file), 'utf8');
         return JSON.parse(data);
     });
