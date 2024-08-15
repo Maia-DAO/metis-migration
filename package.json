@@ -6,9 +6,9 @@
   "license": "MIT",
   "scripts": {
     "all": "yarn run filter-pairs && yarn run get-holders && yarn run balance-inside-pairs && yarn run extract-totals && yarn run get-rewards && yarn run staked-balance",
-    "filter-pairs": "forge script script/FilterPairs.s.sol --fork-url https://metis-mainnet.g.alchemy.com/v2/FWmhvca-2KGl6D1o9YcToyEeO8Lmshcy --fork-block-number 18011710",
+    "filter-pairs": "forge script script/FilterPairs.s.sol --fork-url https://metis-mainnet.g.alchemy.com/v2/FWmhvca-2KGl6D1o9YcToyEeO8Lmshcy --fork-block-number 18097914",
     "get-holders": "node scriptJs/getHolders.js && node scriptJs/consolidateHolders.js",
-    "balance-inside-pairs": "forge script script/BalanceInsidePairs.s.sol --fork-url https://metis-mainnet.g.alchemy.com/v2/FWmhvca-2KGl6D1o9YcToyEeO8Lmshcy --fork-block-number 18011710",
+    "balance-inside-pairs": "forge script script/BalanceInsidePairs.s.sol --fork-url https://metis-mainnet.g.alchemy.com/v2/FWmhvca-2KGl6D1o9YcToyEeO8Lmshcy --fork-block-number 18097914",
     "extract-totals": "node scriptJs/extractTotals.js",
     "get-rewards": "node scriptJs/getPendingRewards.js",
     "staked-balance": "node scriptJs/getStakedBalance.js"

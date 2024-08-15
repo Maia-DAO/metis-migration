@@ -5,7 +5,7 @@ const { ethers } = require('ethers');
 // Setup ethers provider
 const provider = new ethers.providers.JsonRpcProvider('https://metis-mainnet.g.alchemy.com/v2/FWmhvca-2KGl6D1o9YcToyEeO8Lmshcy');
 
-const MIGRATION_BLOCK = 18011710
+const MIGRATION_BLOCK = 18097914
 
 const hermes = "0xb27BbeaACA2C00d6258C3118BAB6b5B6975161c8"
 const multicallAddress = "0x5D78bF8f79A66e43f5932c1Ae0b8fA6563F97f74";
